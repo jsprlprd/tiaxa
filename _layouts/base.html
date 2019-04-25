@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <!-- <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#007BFE" />
+    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/assets/img/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="{{ site.baseurl }}/assets/img/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="{{ site.baseurl }}/assets/img/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="{{ site.baseurl }}/assets/img/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="{{ site.baseurl }}/assets/img/favicons/mstile-310x310.png" />
+
+    <title>PhollowUp</title>
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-152x152.png" />
+
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon-128.png" sizes="128x128" />
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon-196x196.png" sizes="196x196" /> -->
+
+    <!-- Raleway - Google  Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,600,700,800" rel="stylesheet">
+
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- Base stylesheet -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/tiaxa.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/plugins/chartsjs/dist/Chart.min.css">
+
+    <!-- Plugins -->
+ 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+
+    <!-- <link rel="manifest" href="{{ site.baseurl }}/manifest.json"> -->
+  </head>
+  <body>
+
+    {{ content }}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/functions.js"></script>
+
+    <script src="/assets/plugins/chartsjs/dist/Chart.bundle.min.js"></script>
+    <script src="/assets/js/charts.js"></script>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+
+
+
+
+
+
+    <script type="text/javascript">
+      $(function() {
+      
+          var start = moment().subtract(29, 'days');
+          var end = moment();
+      
+          function cb(start, end) {
+              $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+          }
+      
+          $('#reportrange').daterangepicker({
+              startDate: start,
+              endDate: end,
+              ranges: {
+                 'Today': [moment(), moment()],
+                 'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                 'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                 'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                 'This Month': [moment().startOf('month'), moment().endOf('month')],
+                 'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+              },
+              'opens': 'left'
+          }, cb);
+      
+          cb(start, end);
+      
+      });
+      </script>
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+
+<div class="heading">
+  <h1 class="heading-title h3">Settings</h1>
+</div>
+
+
+<div class="card">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-3">
+        {% include components/molecules/nav-menu.html
+          nav-type="nav-pills"
+          isLarge=""
+          isStacked="flex-column"
+          isJustified=""
+          list-value-name=site.data.navigation.settings
+          hasIcon="false"
+        %}
+      </div>
+      <div class="col-9">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</div>

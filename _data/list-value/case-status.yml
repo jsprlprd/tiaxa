@@ -1,0 +1,20 @@
+- text: Open
+  value: open
+
+- text: Impending
+  value: impending
+
+- text: Negotiation
+  value: negotiation
+
+- text: Conciliation
+  value: conciliation
+
+- text: Arbitration
+  value: arbitration
+
+- text: Called-off
+  value: called-off
+
+- text: Close
+  value: close

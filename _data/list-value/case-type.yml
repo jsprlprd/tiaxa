@@ -1,0 +1,20 @@
+- text: Collective Agreement Dispute
+  value: collective-agreement-dispute
+
+- text: Company Restructuring
+  value: company-restructuring
+
+- text: Grievance
+  value: grievance
+
+- text: Other
+  value: other
+
+- text: Retrenchement
+  value: retrenchement
+
+- text: Shorter Workweek / Temporary Layoff
+  value: shorter-workweek-and-temporary-layoff
+
+- text: Wage
+  value: wage

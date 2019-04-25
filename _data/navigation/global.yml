@@ -1,0 +1,15 @@
+- text: Dashboard
+  icon: fas fa-th-large
+  url: dashboard.html
+
+- text: Reviews
+  icon: fas fa-comment-alt
+  url: reviews.html
+
+- text: My Hotels
+  icon: fas fa-hotel
+  url: my-hotels.html
+
+- text: Settings
+  icon: fas fa-cog
+  url: settings/general.html

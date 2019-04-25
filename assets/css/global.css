@@ -1,0 +1,298 @@
+body {
+  background-color: #EEEEF4;
+  padding-top: 64px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0px;
+  }
+}  
+.heading {
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
+
+.heading-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #f29100;
+}
+
+.heading-subtitle {
+  margin-top: 4px;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #727272;
+}
+
+.heading-subtitle:empty {
+  display: none;
+}
+
+
+.navbar {
+  background-color: #00254d;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    /* background-color: rgba(248, 248, 248, .82); */
+    background-color: #f8f9fa;
+  }
+}
+
+.navbar-brand {
+  padding: 16px 24px;
+  margin-right: 0;
+  /* width: 100%; */
+}
+
+
+
+@media (min-width: 992px) {
+
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+}
+
+#main-panel {
+  margin-left: 0;
+  /* padding-top: 64px; */
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  #main-panel {
+    padding-top: 0;
+    margin-left: 256px;
+  }
+}
+
+#main-panel .container-fluid {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+
+@media (min-width: 992px) {
+  #main-panel .container-fluid {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+
+
+
+
+#left-panel {
+  padding: 0;
+  background-color: #ffffff;
+}
+
+@media (min-width: 992px) {
+  #left-panel {
+    width: 256px;
+    bottom: 0;
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+
+#global-slider {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: none;
+  width: 256px;
+  background-color: #ffffff;
+  z-index: 1040;
+  /* padding: 12px; */
+}
+
+@media (min-width: 992px) {
+  #global-slider {
+    left: 0 !important;
+    top: unset;
+    bottom: unset;
+    position: unset;
+  }
+}
+
+
+
+#global-slider .navbar-nav {
+  width: 100%;
+}
+
+#global-slider .nav-link {
+  border-radius: 4px;
+  padding: 12px 16px;
+}
+
+#global-slider .nav-link.active {
+  /* background-color: #003e80; */
+  /* color: #e5f2ff; */
+}
+
+#global-slider .nav-link-icon {
+  /* color: #f29100; */
+  line-height: 24px;
+  width: 24px;
+  text-align: center;
+  margin-right: 16px;
+  font-size: 16px;
+}
+
+
+
+
+.navbar-wrapper {
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+
+
+
+
+#review-sorting-card {
+  width: 320px;
+  border: 0;
+  position: absolute;
+  right: 0;
+  z-index: 1000;
+}
+
+
+.card {
+  border: 0;
+}
+
+
+
+
+
+
+#dasboard-filter-button label {
+  border-radius: 9999px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 0;
+  box-shadow: none;
+  margin-left: 4px;
+}
+
+#dasboard-filter-button label:first-child {
+  margin-left: 0;
+}
+
+
+
+#dasboard-filter-button label.active {
+  background-color: #f29100;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-scrollable {
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-scroll-snap-type: mandatory;
+  scroll-snap-type: x mandatory;
+  -webkit-scroll-snap-destination: 50% 50%;
+  scroll-snap-destination: 50% 50%;
+  /* margin-left: -24px; */
+  /* margin-right: -24px; */
+  /* padding-left: 24px; */
+  /* padding-right: 24px; */
+  /* width: 100vw; */
+  padding-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .scrollable {
+    /* flex-wrap: wrap; */
+  }
+}
+
+.card-scrollable .spacer {
+  -webkit-scroll-snap-coordinate: 50% 50%;
+  scroll-snap-coordinate: 50% 50%;
+  scroll-snap-align: center;
+  flex: 0 0;
+  flex-basis: 12px;
+}
+
+.card-scrollable .card {
+  -webkit-scroll-snap-coordinate: 50% 50%;
+  scroll-snap-coordinate: 50% 50%;
+  scroll-snap-align: center;
+  margin-left: 4px;
+  margin-right: 4px;
+  flex: 0 0;
+  flex-basis: calc(25% - 32px);
+  border: 0;
+}
+
+.card-scrollable .card:first-child {
+  margin-left: 16px;
+}
+
+.card-scrollable .card:last-child {
+  margin-right: 16px;
+}
+
+
+.active [value="All"] ~ .cards [data-category] {
+  display: block;
+}
+
+
+
+
+
+
+.active > [value="Engagements"] ~ .cards .card:not([data-category*="Engagement"]),
+.active > [value="Ratings"] ~ .cards .card:not([data-category*="Rating"]),
+.active > [value="Reviews"] ~ .cards .card:not([data-category*="Review"]),
+.active > [value="Remantics"] ~ .cards .card:not([data-category*="Semantic"]) {
+  display: none;
+}
+
+
+
+
+
+#global-search .form-control {
+  border: 0;
+  width: 480px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}

@@ -1,0 +1,85 @@
+---
+layout: default
+
+container-type: container-fluid
+---
+
+<div class="heading">
+  <h1 class="heading-title h3">Reviews</h1>
+</div>
+
+<div class="d-flex align-items-start align-items-center justify-content-between">
+
+  <div>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons" id="dasboard-filter-button">
+      <label class="btn btn-light active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> All
+      </label>
+      <label class="btn btn-light">
+        <input type="radio" name="options" id="option3" autocomplete="off"> New
+      </label>
+      <label class="btn btn-light">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Pending
+      </label>
+      <label class="btn btn-light">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Completed
+      </label>
+    </div>
+  </div>
+
+  <div>
+    <div class="dropdown d-inline-block">
+      <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        All Semantics
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Negative</a>
+        <a class="dropdown-item" href="#">Neutral</a>
+        <a class="dropdown-item" href="#">Possitive</a>
+      </div>
+    </div>
+    <div class="dropdown d-inline-block">
+      <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        All Sources
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <h6 class="dropdown-header">Booking Platform</h6>
+        <a class="dropdown-item" href="#">Agoda</a>
+        <a class="dropdown-item" href="#">Booking.com</a>
+        <a class="dropdown-item" href="#">Tripadvisor</a>
+        <div class="dropdown-divider"></div>
+        <h6 class="dropdown-header">Social Media</h6>
+        <a class="dropdown-item" href="#">Facebook</a>
+        <a class="dropdown-item" href="#">Twitter</a>
+      </div>
+    </div>
+    <button class="btn btn-light" id="reportrange" type="button"><span></span></button>
+  </div>
+
+</div>
+
+<hr class="dashed">
+
+<div class="row">
+
+  <div class="col-lg-8 offset-lg-2">
+
+    <a class="card mb-3" data-toggle="modal" href="#review-modal">
+      <div class="card-body">
+        <div class="media">
+          <div class="mr-3">
+            <img class="rounded-circle" src="/assets/img/avatar.png" alt="" width="48" height="48">
+            <p>Jasper Lepardo</p>
+          </div>
+          <div class="media-content">
+            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> Reviewed Yesterday</p>
+            <p>Rundown hotel rooms, poor housekeeping staff service ,This hotel needs a major upkeep and maintenance works. For the room rate that I paid - Php12,800/night- the bathroom pipes were clogged, the housekeeping staff took forever to deliver our requests, the carpet is filthy, and no safety handles for PwDs inside the bathroom, except for one on the shower wall. Bath tub is too high for a pwd who has dofficulty climbing. Plus, the twin beds are soooo small. Marriott has better beds and rooms.</p>
+            <span>Posted at Agoda</span>
+          </div>
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+</div>

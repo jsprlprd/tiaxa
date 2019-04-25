@@ -1,0 +1,19 @@
+- text: General
+  icon: 
+  url: settings/general.html
+
+- text: Task
+  icon: 
+  url: settings/task.html
+
+- text: Contact
+  icon: 
+  url: settings/contact.html
+
+- text: Template
+  icon: 
+  url: settings/template.html
+
+- text: Tutorial
+  icon: 
+  url: settings/tutorial.html

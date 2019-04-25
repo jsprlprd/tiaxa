@@ -1,0 +1,157 @@
+<div class="modal" id="review-modal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="media">
+          <div class="mr-3">
+            <img class="rounded-circle" src="/assets/img/avatar.png" alt="" width="48" height="48">
+            <p>Jasper Lepardo</p>
+          </div>
+          <div class="media-content">
+            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> Reviewed Yesterday</p>
+            <p>Rundown hotel rooms, poor housekeeping staff service ,This hotel needs a major upkeep and maintenance works. For the room rate that I paid - Php12,800/night- the bathroom pipes were clogged, the housekeeping staff took forever to deliver our requests, the carpet is filthy, and no safety handles for PwDs inside the bathroom, except for one on the shower wall. Bath tub is too high for a pwd who has dofficulty climbing. Plus, the twin beds are soooo small. Marriott has better beds and rooms.</p>
+            <span>Posted at Agoda</span>
+          </div>
+        </div>
+        <button class="close" type="button">&times;</button>
+      </div>
+      <div class="modal-nav">
+        {% include components/molecules/nav-tabs.html
+          nav-type="nav-tabs"
+          isLarge=""
+          isStacked=""
+          isJustified=""
+          isResponsive="nav-tabs-responsive"
+          list-value-name=site.data.navigation.review-setting
+          hasIcon=""
+        %}
+      </div>
+      <div class="modal-body">
+        <div class="tab-content">
+          <div class="tab-pane active show" id="reply-tab">
+            {% include components/molecules/form-group/select.html 
+              form-layout="horizontal"
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class="form-label"
+              form-label-size="col-lg-3"
+              form-label-text="Template"
+              input-size="col-lg-6"
+              input-type=""
+              input-name="select-template"
+              input-value=""
+              input-placeholder="Select Template"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+            {% include components/molecules/form-group/textarea.html 
+              form-layout="horizontal"
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class="form-label"
+              form-label-size="col-lg-3"
+              form-label-text="Message"
+              input-size="col-lg-6"
+              input-type=""
+              input-name="message"
+              input-value=""
+              input-placeholder="Write your message here"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+          </div>
+          <div class="tab-pane" id="create-a-task-tab">
+            {% include components/molecules/form-group/select.html 
+              form-layout="horizontal"
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class="form-label"
+              form-label-size="col-lg-3"
+              form-label-text="Category"
+              input-size="col-lg-6"
+              input-type=""
+              input-name="category"
+              input-value=""
+              input-placeholder="Select Category"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+            {% include components/molecules/form-group/select.html 
+              form-layout="horizontal"
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class="form-label"
+              form-label-size="col-lg-3"
+              form-label-text="Task"
+              input-size="col-lg-6"
+              input-type=""
+              input-name="task"
+              input-value=""
+              input-placeholder="Select Task"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+            {% include components/molecules/form-group/select.html 
+              form-layout="horizontal"
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class="form-label"
+              form-label-size="col-lg-3"
+              form-label-text="Department"
+              input-size="col-lg-6"
+              input-type=""
+              input-name="department"
+              input-value=""
+              input-placeholder="Select Department"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+            {% include components/molecules/form-group/textarea.html 
+              form-layout="horizontal"
+              isInputLarge=""
+              isInputRequired=""
+              hasFormLabel=""
+              form-label-class="form-label"
+              form-label-size="col-lg-3"
+              form-label-text="Message"
+              input-size="col-lg-6"
+              input-type=""
+              input-name="message"
+              input-value=""
+              input-placeholder="Write your message here"
+              hasFormIcon="none"
+              form-icon-name=""
+              form-icon-placement=""
+              hasFormHelper="none"
+              form-helper-text=""
+            %}
+          </div>
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button class="btn btn-light btn-wide" data-dismiss="modal" type="button">Cancel</button>
+        <button class="btn btn-primary btn-wide" type="button">Save Changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
