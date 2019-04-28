@@ -9,12 +9,12 @@ layout: base
   <button class="navbar-toggler" id="mobile-slider" type="button">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="profile" href="/select-branch.html">
-    <img class="profile-photo" src="/assets/img/shangri-la-avatar.jpg" width="96" height="96" alt="">
+  <a class="profile" href="{{ site.baseurl }}/select-branch.html">
+    <img class="profile-photo" src="{{ site.baseurl }}/assets/img/shangri-la-avatar.jpg" width="96" height="96" alt="">
     <p class="profile-name">Shangri-la Hotels and Resorts</p>
     <p class="profile-branch">Edsa Shangri-La, Manila</p>
-    <!-- <a class="dropdown-toggle" href="/select-branch.html">Select Account</a> -->
-  </a>
+    <!-- <a class="dropdown-toggle" href="{{ site.baseurl }}/select-branch.html">Select Account</a> -->
+  </div>
   <div class="collapse navbar-collapse" id="global-slider">
     {% include components/molecules/nav-menu.html
       nav-type="navbar-nav"
@@ -29,7 +29,7 @@ layout: base
         <a class="nav-link" data-toggle="dropdown" href="" aria-expanded="false">
           <div class="media">
             <div class="mr-2">
-              <img class="rounded-circle" src="/assets/img/avatar.png" width="32" height="32" alt="">
+              <img class="rounded-circle" src="{{ site.baseurl }}/assets/img/avatar.png" width="32" height="32" alt="">
             </div>
             <div class="media-body align-self-center">
               Jasper Lepardo
@@ -55,10 +55,10 @@ layout: base
       </form>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="/select-branch.html">
+          <a class="nav-link" href="{{ site.baseurl }}/select-branch.html">
             <div class="media">
               <div class="mr-3">
-                <img class="rounded" src="/assets/img/shangri-la-avatar.jpg" width="48" height="48" alt="">
+                <img class="rounded" src="{{ site.baseurl }}/assets/img/shangri-la-avatar.jpg" width="48" height="48" alt="">
               </div>
               <div class="media-body align-self-center">
                 <div>Shangri-la Hotels and Resorts</div>
