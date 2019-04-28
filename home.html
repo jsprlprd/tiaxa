@@ -1,0 +1,88 @@
+---
+layout: default
+
+container-type: container-fluid
+---
+
+
+<div class="heading">
+  <h1 class="heading-title h3">Good afternoon, Jasper</h1>
+</div>
+
+<div class="jumbotron">
+
+</div>
+
+<div class="card mb-4">
+  <div class="card-body">
+    <div class="d-flex align-items-start align-items-center justify-content-between">
+      <h6 class="card-title h4">Average User Rating</h6>
+      <button class="btn btn-light" id="reportrange" type="button"><span></span></button>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 text-center">
+          <h1 class="display-1">6.5</h1>
+            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <!-- <p>out of 10</p> -->
+        <hr class="dahed">
+        <p class="lead mb-0">2643</p>
+        <p class="small text-muted mb-0">Total Reviews</p>
+      </div>
+      <div class="col-lg-10">
+        <canvas id="average-user-rating" width="5" height="1"></canvas>
+      </div>
+      <!-- <div class="col-lg-2">
+        <p class="lead">2643</p>
+        <p class="text-muted">Total Reivews</p>
+        <hr class="dahed">
+        <p class="lead">1534</p>
+        <p class="text-muted">Reivews with Comments</p>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<div class="card mb-4">
+  <div class="card-body">
+    <h6 class="card-title h4 text-center">Review Source</h6>
+    <div class="row">
+      <div class="col-lg">
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-4">
+                <div>
+                  <canvas id="booking-platform-review-source-pie" width="120" height="120"></canvas>
+                  <!-- <div>
+                    <p>2,643</p>
+                    <p>Total Reviews</p>
+                    <p>from the past 6 months</p>
+                  </div> -->
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <canvas id="booking-platform-review-source-bar" width="120" height="60"></canvas>
+              </div>
+            </div>
+            <h6 class="card-title h5 text-center">Booking Platform</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg">
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-4">
+                <canvas id="social-media-review-source-pie" width="120" height="120"></canvas>
+              </div>
+              <div class="col-lg-8">
+                <canvas id="social-media-review-source-bar" width="120" height="60"></canvas>
+              </div>
+            </div>
+            <h6 class="card-title h5 text-center">Social Media</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

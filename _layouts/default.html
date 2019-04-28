@@ -3,56 +3,57 @@ layout: base
 ---
 
 <div class="navbar navbar-expand-lg navbar-light fixed-top" id="left-panel">
-  <a class="navbar-brand" href="{{ site.baseurl }}/app/dashboard.html">
+  <!-- <a class="navbar-brand" href="{{ site.baseurl }}/app/dashboard.html">
     <img class="" src="{{ site.baseurl }}/assets/img/logo_tiaxa.png" alt="" width="" height="32">
-  </a>
+  </a> -->
   <button class="navbar-toggler" id="mobile-slider" type="button">
     <span class="navbar-toggler-icon"></span>
   </button>
+  <a class="profile" href="/select-branch.html">
+    <img class="profile-photo" src="/assets/img/shangri-la-avatar.jpg" width="96" height="96" alt="">
+    <p class="profile-name">Shangri-la Hotels and Resorts</p>
+    <p class="profile-branch">Edsa Shangri-La, Manila</p>
+    <!-- <a class="dropdown-toggle" href="/select-branch.html">Select Account</a> -->
+  </a>
   <div class="collapse navbar-collapse" id="global-slider">
-    <div class="navbar-wrapper">
-      {% include components/molecules/nav-menu.html
-        nav-type="navbar-nav"
-        isLarge=""
-        isStacked="flex-column"
-        isJustified=""
-        list-value-name=site.data.navigation.global
-        hasIcon=""
-      %}
-      <ul class="navbar-nav flex-column mt-auto">
-        <li class="nav-item dropup">
-          <a class="nav-link" data-toggle="dropdown" href="" aria-expanded="false">
-            <div class="media">
-              <div class="mr-3">
-                <img class="rounded-circle" src="/assets/img/avatar.png" width="32" height="32" alt="">
-              </div>
-              <div class="media-body align-self-center">
-                Jasper Lepardo
-              </div>
+    {% include components/molecules/nav-menu.html
+      nav-type="navbar-nav"
+      isLarge=""
+      isStacked="flex-column"
+      isJustified=""
+      list-value-name=site.data.navigation.global
+      hasIcon=""
+    %}
+    <ul class="navbar-nav flex-column mt-auto">
+      <li class="nav-item dropup">
+        <a class="nav-link" data-toggle="dropdown" href="" aria-expanded="false">
+          <div class="media">
+            <div class="mr-2">
+              <img class="rounded-circle" src="/assets/img/avatar.png" width="32" height="32" alt="">
             </div>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="#"><i class="fas fa-sync-alt mr-2"></i>Refresh Page</a>
-            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt mr-2"></i>Logout</a>
+            <div class="media-body align-self-center">
+              Jasper Lepardo
+            </div>
           </div>
-        </li>
-      </ul>
-    </div>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="#"><i class="fas fa-sync-alt mr-2"></i>Refresh Page</a>
+          <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt mr-2"></i>Logout</a>
+        </div>
+      </li>
+    </ul>
+    <p class="text-muted mb-0">Powered by Tiaxa</p>
   </div>
   <div class="slider-overlay"></div>
 </div>
 
 <div id="main-panel">
-  <div class="navbar navbar-expand-lg navbar-light">
+  <!-- <div class="navbar navbar-expand-lg navbar-light">
     <div class="collapse navbar-collapse">
       <form class="form-inline my-2 my-lg-0" id="global-search">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
       </form>
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#" style="font-size: 24px;font-size: 24px;padding: 14px;width: 64px;text-align: center;line-height: 1.5;"><i class="fas fa-bell"></i></a>
-        </li>
         <li class="nav-item">
           <a class="nav-link" href="/select-branch.html">
             <div class="media">
@@ -72,7 +73,7 @@ layout: base
         </li>
       </ul>
     </div>
-  </div>
+  </div> -->
   <main class="{{ page.container-type }}" id="main-content">
     {{ content }}
   </main>
