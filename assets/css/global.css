@@ -308,3 +308,6 @@ a.profile:hover {
 }
 
 
+#review-modal .modal-header {
+  border-bottom: 0;
+}

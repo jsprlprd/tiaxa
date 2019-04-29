@@ -1,15 +1,13 @@
-- text: All
-  url: all
+- text: No Reply
+  url: no-reply
   status: active
+  has-badge: true
+  badge-type: danger
+  badge-content: 5
 
-- text: New
-  url: new
+- text: Replied
+  url: replied
   status:
-
-- text: Pending
-  url: pending
-  status:
-
-- text: Completed
-  url: completed
-  status:
+  has-badge: true
+  badge-type: danger
+  badge-content: 100
