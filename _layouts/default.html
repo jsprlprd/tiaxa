@@ -2,14 +2,14 @@
 layout: base
 ---
 
-<div class="navbar navbar-expand-lg navbar-light fixed-top" id="left-panel">
+<div class="navbar navbar-expand-lg navbar-dark fixed-top" id="left-panel">
   <!-- <a class="navbar-brand" href="{{ site.baseurl }}/app/dashboard.html">
     <img class="" src="{{ site.baseurl }}/assets/img/logo_tiaxa.png" alt="" width="" height="32">
   </a> -->
   <button class="navbar-toggler" id="mobile-slider" type="button">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="profile" href="{{ site.baseurl }}/select-branch.html">
+  <a class="profile" data-toggle="modal" href="#select-branch-modal">
     <img class="profile-photo" src="{{ site.baseurl }}/assets/img/shangri-la-avatar.jpg" width="96" height="96" alt="">
     <p class="profile-name">Shangri-la Hotels and Resorts</p>
     <p class="profile-branch">Edsa Shangri-La, Manila</p>
@@ -82,3 +82,4 @@ layout: base
 
 
 {% include components/organisms/modals/review-modal.html %}
+{% include components/organisms/modals/select-branch-modal.html %}

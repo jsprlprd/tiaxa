@@ -64,7 +64,7 @@
 
 #left-panel {
   padding: 0;
-  background-color: #EEEEF4;
+  background-color: #393b40;
 }
 
 @media (min-width: 992px) {
@@ -109,7 +109,7 @@
 }
 
 #global-slider .nav-link.active {
-  background-color: #FFAB4F;
+  background-color: #6f6f6f;
   color: #ffffff;
 }
 
