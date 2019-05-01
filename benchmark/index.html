@@ -8,12 +8,85 @@ container-type: container-fluid
   <h1 class="heading-title h3">Benchmark</h1>
 </div>
 
+<div class="d-flex align-items-start align-items-center justify-content-between">
 
+  <!-- <div>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons" id="dasboard-filter-button">
+      <label class="btn btn-light active" for="All">
+        <input type="radio" name="dasboard-filter" id="All" value="All" checked> All
+      </label>
+      <label class="btn btn-light" for="Engagements">
+        <input type="radio" name="dasboard-filter" id="Engagements" value="Engagements"> Engagements
+      </label>
+      <label class="btn btn-light" for="Ratings">
+        <input type="radio" name="dasboard-filter" id="Ratings" value="Ratings"> Ratings
+      </label>
+      <label class="btn btn-light" for="Reviews">
+        <input type="radio" name="dasboard-filter" id="Reviews" value="Reviews"> Reviews
+      </label>
+      <label class="btn btn-light" for="Semantics">
+        <input type="radio" name="dasboard-filter" id="Semantics" value="Semantics"> Semantics
+      </label>
+    </div>
+    <label class="checkbox">
+      <input type="checkbox" name="options" id="option3" autocomplete="off"> Show Competition
+    </label>
+  </div> -->
+
+
+  <div>
+    <div class="d-inline-block">
+      <select class="form-control" name="" id="">
+        <option value="">Average User Rating</option>
+        <option value="">Negative Comments</option>
+        <option value="">Positive Comments</option>
+      </select>
+    </div>
+    <div class="dropdown d-inline-block">
+      <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        All Sources
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <h6 class="dropdown-header">Booking Platform</h6>
+        <a class="dropdown-item" href="#">Agoda</a>
+        <a class="dropdown-item" href="#">Booking.com</a>
+        <a class="dropdown-item" href="#">Tripadvisor</a>
+        <div class="dropdown-divider"></div>
+        <h6 class="dropdown-header">Social Media</h6>
+        <a class="dropdown-item" href="#">Facebook</a>
+        <a class="dropdown-item" href="#">Twitter</a>
+      </div>
+    </div>
+    <!-- <button class="btn btn-light" id="reportrange" type="button"><span></span></button> -->
+    <!-- <a class="btn btn-light" href=""><i class="fas fa-download"></i></a> -->
+  </div>
+
+  <div>
+    <div class="row">
+      <div class="col-auto">
+        <label class="col-form-label" for="">Show value as:</label>
+      </div>
+      <div class="col">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-light active" for="All">
+            <input type="radio" name="dasboard-filter" id="All" value="All" checked> Absolute Value
+          </label>
+          <label class="btn btn-light" for="Engagements">
+            <input type="radio" name="dasboard-filter" id="Engagements" value="Engagements"> Percentage
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<hr class="dashed">
 
 <div class="row">
   <div class="col-lg-3">
     <div class="card">
-      <img class="card-img-top" src="https://dummyimage.com/16:9x1080/" alt="">
+      <img class="card-img-top" src="https://dummyimage.com/4:3x1080/" alt="">
       <div class="card-body">
         <h6 class="card-title h4">Edsa Shangri-La</h6>
         <!-- <h6 class="card-title">172 Negative Comments</h6> -->
@@ -31,15 +104,15 @@ container-type: container-fluid
           <div class="row">
             <div class="col text-center">
               <p class="h3 text-danger mb-0">180</p>
-              <p class="small text-muted mb-0">Negative Comments</p>
+              <p class="small text-muted mb-0">Negative<br/>Comments</p>
             </div>
             <div class="col text-center">
               <p class="h3 text-success mb-0">345</p>
-              <p class="small text-muted mb-0">Possitive Comments</p>
+              <p class="small text-muted mb-0">Positive<br/>Comments</p>
             </div>
             <div class="col text-center">
-              <p class="h3 mb-0">87</p>
-              <p class="small text-muted mb-0">Neutral Comments</p>
+              <p class="h3 text-secondary mb-0">87</p>
+              <p class="small text-muted mb-0">Neutral<br/>Comments</p>
             </div>
           </div>
         </div>

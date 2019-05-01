@@ -313,6 +313,69 @@ var CustomerDemographics = new Chart(cd, {
         }
     }
 });
+
+
+
+
+
+var tnm = document.getElementById('total-negative-mentions').getContext('2d');
+var TotalNegativeMentions = new Chart(tnm, {
+    type: 'doughnut',
+    data: {
+        labels: ['Positive', 'Negative', 'Neutral'],
+        datasets: [{
+            label: 'Total Reviews',
+            data: [60, 30, 10],
+            backgroundColor: [
+                'rgba(0, 166, 81, 1)',
+                'rgba(255, 97, 97, 1)',
+                'rgba(165, 165, 165, 1)'
+            ],
+            borderColor: [
+                'rgba(0, 166, 81, 1)',
+                'rgba(242, 24, 0, 1)',
+                'rgba(165, 165, 165, 1)'
+            ],
+            borderWidth: 1,
+        }]
+    },
+    options: {
+        rotation: 1 * Math.PI,
+        circumference: 1 * Math.PI,
+        animation: {
+            duration: 0
+        },
+        legend: {
+            display: false
+        }
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </script>
   </body>
 </html>

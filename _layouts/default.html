@@ -9,12 +9,12 @@ layout: base
   <button class="navbar-toggler" id="mobile-slider" type="button">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="profile" data-toggle="modal" href="#select-branch-modal">
+  <div class="profile">
     <img class="profile-photo" src="{{ site.baseurl }}/assets/img/shangri-la-avatar.jpg" width="96" height="96" alt="">
     <p class="profile-name">Shangri-la Hotels and Resorts</p>
     <p class="profile-branch">Edsa Shangri-La, Manila</p>
     <!-- <a class="dropdown-toggle" href="{{ site.baseurl }}/select-branch.html">Select Account</a> -->
-  </a>
+  </div>
   <div class="collapse navbar-collapse" id="global-slider">
     {% include components/molecules/nav-menu.html
       nav-type="navbar-nav"
@@ -26,23 +26,18 @@ layout: base
     %}
     <ul class="navbar-nav flex-column mt-auto">
       <li class="nav-item dropup">
-        <a class="nav-link" data-toggle="dropdown" href="" aria-expanded="false">
-          <div class="media">
-            <div class="mr-2">
-              <img class="rounded-circle" src="{{ site.baseurl }}/assets/img/avatar.png" width="32" height="32" alt="">
-            </div>
-            <div class="media-body align-self-center">
-              Jasper Lepardo
-            </div>
-          </div>
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" aria-expanded="false">
+              <img class="rounded-circle mr-2" src="{{ site.baseurl }}/assets/img/avatar.png" width="32" height="32" alt="">
+              <span>Jasper Lepardo</span>
         </a>
         <div class="dropdown-menu dropdown-menu-right">
-          <a class="dropdown-item" href="#"><i class="fas fa-sync-alt mr-2"></i>Refresh Page</a>
-          <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt mr-2"></i>Logout</a>
+          <a class="dropdown-item" data-toggle="modal" href="#select-branch-modal">Select Branch</a>
+          <a class="dropdown-item" href="#">Logout<i class="fas fa-sign-out-alt ml-2"></i></a>
         </div>
       </li>
     </ul>
-    <p class="text-muted mb-0">Powered by Tiaxa</p>
+    <hr class="dashed">
+    <p class="small text-muted mb-0">Powered by Tiaxa</p>
   </div>
   <div class="slider-overlay"></div>
 </div>
@@ -74,9 +69,13 @@ layout: base
       </ul>
     </div>
   </div> -->
-  <main class="{{ page.container-type }}" id="main-content">
+  {% if page.page-layout == "empty" %}
     {{ content }}
-  </main>
+    {% else %}
+    <main class="{{ page.container-type }}" id="main-content">
+      {{ content }}
+    </main>
+  {% endif %}
 </div>
 
 

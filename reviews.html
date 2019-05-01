@@ -1,191 +1,175 @@
 ---
 layout: default
 
-container-type: container-fluid
+page-layout: empty
+container-type: container
 ---
 
-<div class="heading">
-  <h1 class="heading-title h3">Reviews</h1>
-</div>
-
-
-<div class="row">
-  <div class="col-lg-3">
-    <div class="card border-0 shadow">
-      <div class="card-body">
-        <p class="lead">Filter</p>
-
-        <fieldset class="form-group">
-          <label class="form-label">Booking Site</label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios1" value="option1" checked>
-            <label class="form-check-label" for="gridRadios1">
-              All Booking Sites
+<div class="row no-gutters">
+  <div class="col-lg" style="max-width: 320px; background-color: #fafafa; border-right: 1px solid #dddddd; padding: 24px;">
+    <p class="lead">Filter</p>
+    <p>Source</p>
+    <fieldset class="form-group ml-3">
+      <label class="form-label">Booking Site</label>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          All Booking Sites
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios1" value="option1">
+        <label class="form-check-label" for="gridRadios1">
+          Agoda
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          Booking.com
+        </label>
+      </div>
+      <div class="form-check disabled">
+        <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios3" value="option3">
+        <label class="form-check-label" for="gridRadios3">
+          Tripadvisor
+        </label>
+      </div>
+    </fieldset>
+    <fieldset class="form-group ml-3">
+      <label class="form-label">Social Media Site</label>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          All Social Media Site
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios1" value="option1">
+        <label class="form-check-label" for="gridRadios1">
+          Facebook
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          Twitter
+        </label>
+      </div>
+    </fieldset>
+    <p>Semantics</p>
+    <fieldset class="form-group ml-3">
+      <!-- <label class="form-label">Semantics</label> -->
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          All Semantics
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios1" value="option1">
+        <label class="form-check-label" for="gridRadios1">
+          Negative
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          Positive
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          Neutral
+        </label>
+      </div>
+    </fieldset>
+    <p>Tasks</p>
+    <fieldset class="form-group">
+      <select class="form-control" name="" id="">
+        <option value="">All Department</option>
+      </select>
+    </fieldset>
+    <fieldset class="form-group">
+      <select class="form-control" name="" id="">
+        <option value="">All Category</option>
+      </select>
+    </fieldset>
+    <fieldset class="form-group">
+      <select class="form-control" name="" id="">
+        <option value="">All Tasks</option>
+      </select>
+    </fieldset>
+    <hr class="dashed">
+    <a class="btn btn-link" href="">Reset</a>
+    <a class="btn btn-primary" href="">Apply Filters</a>
+  </div>
+  <div class="col-lg">
+    <div class="container">
+      <div class="heading">
+        <h1 class="heading-title h3">Reviews</h1>  
+      </div>    
+      <div class="d-flex align-items-start align-items-center justify-content-between">
+        <div>
+          <div class="btn-group btn-group-toggle" data-toggle="buttons" id="dasboard-filter-button">
+            <label class="btn btn-light active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> All
+            </label>
+            <label class="btn btn-light">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Task Created
             </label>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios1" value="option1">
-            <label class="form-check-label" for="gridRadios1">
-              Agoda
-            </label>
+        </div>
+        <div>
+          <button class="btn btn-light" id="reportrange" type="button"><span></span></button>
+        </div>
+      </div>
+      <hr class="dashed">
+      <a class="card mb-3" data-toggle="modal" href="#review-modal">
+        <div class="card-body">
+          <div class="d-flex align-items-start align-items-center justify-content-between mb-3">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item"><b>Jasper Lepardo</b></li>
+              <li class="list-inline-item">
+                <ul class="list-inline">
+                  <li class="list-inline-item m-0"><i class="fas fa-star"></i></li>
+                  <li class="list-inline-item m-0"><i class="fas fa-star"></i></li>
+                  <li class="list-inline-item m-0"><i class="fas fa-star"></i></li>
+                  <li class="list-inline-item m-0"><i class="fas fa-star-half-alt"></i></li>
+                  <li class="list-inline-item m-0"><i class="far fa-star"></i></li>
+                </ul>
+              </li>
+            </ul>
+            <p class="card-text text-muted">Reviewed Yesterday at <img src="/assets/img/Agoda_logo.svg" alt="" height="32"></p>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios2" value="option2">
-            <label class="form-check-label" for="gridRadios2">
-              Booking.com
-            </label>
-          </div>
-          <div class="form-check disabled">
-            <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios3" value="option3">
-            <label class="form-check-label" for="gridRadios3">
-              Tripadvisor
-            </label>
-          </div>
-        </fieldset>
-
-        <fieldset class="form-group">
-          <label class="form-label">Social Media Site</label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios1" value="option1" checked>
-            <label class="form-check-label" for="gridRadios1">
-              All Social Media Site
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios1" value="option1">
-            <label class="form-check-label" for="gridRadios1">
-              Facebook
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios2" value="option2">
-            <label class="form-check-label" for="gridRadios2">
-              Twitter
-            </label>
-          </div>
-        </fieldset>
-
-
-        <fieldset class="form-group">
-          <label class="form-label">Semantics</label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios1" value="option1" checked>
-            <label class="form-check-label" for="gridRadios1">
-              All Semantics
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios1" value="option1">
-            <label class="form-check-label" for="gridRadios1">
-              Negative
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios2" value="option2">
-            <label class="form-check-label" for="gridRadios2">
-              Positive
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="gridRadios" id="gridRadios2" value="option2">
-            <label class="form-check-label" for="gridRadios2">
-              Neutral
-            </label>
-          </div>
-        </fieldset>
-        <hr class="dashed">
-        <a class="btn btn-link" href="">Reset</a>
-        <a class="btn btn-primary" href="">Apply Filters</a>
+          <p class="card-text">Rundown hotel rooms, poor housekeeping staff service ,This hotel needs a major upkeep and maintenance works. For the room rate that I paid - Php12,800/night- the bathroom pipes were clogged, the housekeeping staff took forever to deliver our requests, the carpet is filthy, and no safety handles for PwDs inside the bathroom, except for one on the shower wall. Bath tub is too high for a pwd who has dofficulty climbing. Plus, the twin beds are soooo small. Marriott has better beds and rooms.</p>
+        </div>
+      </a>
+  
+      <hr class="dashed">
+  
+      <div class="d-flex align-items-start align-items-center justify-content-between">
+        <div class="d-none d-md-inline align-self-center">Records: 1 - 5 / 100</div>
+        <div class="form-inline mx-auto mx-md-0">
+          <a class="btn btn-link disabled"><i class="fa fa-chevron-left"></i></a>
+          Page
+          <span class="d-inline d-md-none">&nbsp;1&nbsp;</span>
+          <form class="form-group mx-2 d-none d-md-inline">
+            <input class="form-control input-sm" style="text-align: center; width:60px;" type="text" value="1">
+          </form>
+          of 50
+          <a class="btn btn-link"><i class="fa fa-chevron-right"></i></a>
+          <span class="d-none d-md-inline">
+            <select class="form-control mx-1">
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="20">20</option>
+            </select>
+            per page
+          </span>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-lg-9">
-
-    <div class="d-flex align-items-start align-items-center justify-content-between">
-
-      <div>
-        <!-- <div class="btn-group btn-group-toggle" data-toggle="buttons" id="dasboard-filter-button">
-          <label class="btn btn-light active">
-            <input type="radio" name="options" id="option1" autocomplete="off" checked> All
-          </label>
-          <label class="btn btn-light">
-            <input type="radio" name="options" id="option3" autocomplete="off"> Task Created
-          </label>
-        </div> -->
-      </div>
-
-      <div>
-        <!-- <div class="dropdown d-inline-block">
-          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            All Semantics
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Negative</a>
-            <a class="dropdown-item" href="#">Neutral</a>
-            <a class="dropdown-item" href="#">Possitive</a>
-          </div>
-        </div>
-        <div class="dropdown d-inline-block">
-          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            All Sources
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <h6 class="dropdown-header">Booking Platform</h6>
-            <a class="dropdown-item" href="#">Agoda</a>
-            <a class="dropdown-item" href="#">Booking.com</a>
-            <a class="dropdown-item" href="#">Tripadvisor</a>
-            <div class="dropdown-divider"></div>
-            <h6 class="dropdown-header">Social Media</h6>
-            <a class="dropdown-item" href="#">Facebook</a>
-            <a class="dropdown-item" href="#">Twitter</a>
-          </div>
-        </div> -->
-        <button class="btn btn-light" id="reportrange" type="button"><span></span></button>
-      </div>
-
-    </div>
-
-    <hr class="dashed">
-    <a class="card mb-3" data-toggle="modal" href="#review-modal">
-      <div class="card-body">
-        <div class="media">
-          <div class="mr-3">
-            <img class="rounded-circle" src="https://ui-avatars.com/api/?name=Jasper+Lepardo" alt="" width="48" height="48">
-            <p>Jasper Lepardo</p>
-          </div>
-          <div class="media-content">
-            <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> Reviewed Yesterday</p>
-            <p>Rundown hotel rooms, poor housekeeping staff service ,This hotel needs a major upkeep and maintenance works. For the room rate that I paid - Php12,800/night- the bathroom pipes were clogged, the housekeeping staff took forever to deliver our requests, the carpet is filthy, and no safety handles for PwDs inside the bathroom, except for one on the shower wall. Bath tub is too high for a pwd who has dofficulty climbing. Plus, the twin beds are soooo small. Marriott has better beds and rooms.</p>
-            <span>Posted at Agoda</span>
-          </div>
-        </div>
-      </div>
-    </a>
-
-    <hr class="dashed">
-
-    <div class="d-flex align-items-start align-items-center justify-content-between">
-      <div class="d-none d-md-inline align-self-center">Records: 1 - 5 / 100</div>
-      <div class="form-inline mx-auto mx-md-0">
-        <a class="btn btn-link disabled"><i class="fa fa-chevron-left"></i></a>
-        Page
-        <span class="d-inline d-md-none">&nbsp;1&nbsp;</span>
-        <form class="form-group mx-2 d-none d-md-inline">
-          <input class="form-control input-sm" style="text-align: center; width:60px;" type="text" value="1">
-        </form>
-        of 50
-        <a class="btn btn-link"><i class="fa fa-chevron-right"></i></a>
-        <span class="d-none d-md-inline">
-          <select class="form-control mx-1">
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="20">20</option>
-          </select>
-          per page
-        </span>
-      </div>
-    </div>
-    
-  </div>
-
 </div>

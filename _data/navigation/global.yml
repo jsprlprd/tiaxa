@@ -14,10 +14,6 @@
   icon: far fa-comment-alt
   url: reviews.html
 
-- text: Tasks
-  icon: fas fa-tasks
-  url: tasks.html
-
 - text: Settings
   icon: fas fa-cog
   url: settings/general.html
