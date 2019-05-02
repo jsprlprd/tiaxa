@@ -6,7 +6,7 @@
 .heading-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #F69E1D;
+  color: #F0C215;
 }
 
 .heading-subtitle {
@@ -114,7 +114,7 @@
 }
 
 #global-slider .nav-link-icon {
-  /* color: #F69E1D; */
+  /* color: #F0C215; */
   line-height: 24px;
   width: 24px;
   text-align: center;
@@ -214,7 +214,7 @@ a.profile:hover {
 
 
 #dasboard-filter-button label.active {
-  background-color: #F69E1D;
+  background-color: #F0C215;
   color: #ffffff;
 }
 
@@ -395,7 +395,7 @@ left: 0;
 
 
 .start-rating {
-  color: #F69E1D;
+  color: #F0C215;
   margin-bottom: 0;
 }
 
@@ -528,4 +528,17 @@ a.card .card-img-overlay {
 .card:hover .card-img-overlay {
   opacity: 100;
   background: rgba(57, 59, 64, .97);
+}
+
+
+
+
+
+
+#filter {
+  background: #fafafa;
+  max-width: 320px;
+  border-right: 1px solid #ddd;
+  padding: 24px;
+  height: 100vh;
 }
