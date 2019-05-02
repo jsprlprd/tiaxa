@@ -83,48 +83,15 @@ container-type: container-fluid
 
 <hr class="dashed">
 
-<div class="row">
-  <div class="col-lg-3">
-    <div class="card">
-      <img class="card-img-top" src="https://dummyimage.com/4:3x1080/" alt="">
-      <div class="card-body">
-        <h6 class="card-title h4">Edsa Shangri-La</h6>
-        <!-- <h6 class="card-title">172 Negative Comments</h6> -->
-        <div>
-          <div class="media">
-            <div class="mr-3">
-              <p class="display-4 mb-0">4.0</p>
-            </div>
-            <div class="media-body align-self-end">
-              <p class="mb-0"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
-              <p class="small text-muted mb-0">Average User Rating</p>
-            </div>
-          </div>
-          <hr class="dashed">
-          <div class="row">
-            <div class="col text-center">
-              <p class="h3 text-danger mb-0">180</p>
-              <p class="small text-muted mb-0">Negative<br/>Comments</p>
-            </div>
-            <div class="col text-center">
-              <p class="h3 text-success mb-0">345</p>
-              <p class="small text-muted mb-0">Positive<br/>Comments</p>
-            </div>
-            <div class="col text-center">
-              <p class="h3 text-secondary mb-0">87</p>
-              <p class="small text-muted mb-0">Neutral<br/>Comments</p>
-            </div>
-          </div>
-        </div>
-        <hr class="dashed">
-        <p><b>Top 3 Cons</b></p>
-        <ul>
-          <li>Staff</li>
-          <li>Comfort &amp; Facilities</li>
-          <li>Location</li>
-        </ul>
-        <a class="btn btn-primary btn-block" href="{{ site.baseurl }}/benchmark/details.html">View Hotel</a>
-      </div>
-    </div>
-  </div>
+<div class="card-scrollable">
+  {% include components/organisms/hotel-card.html %}
+  {% include components/organisms/hotel-card.html %}
+  {% include components/organisms/hotel-card.html %}
+  {% include components/organisms/hotel-card.html %}
+  {% include components/organisms/hotel-card.html %}
+  {% include components/organisms/hotel-card.html %}
+  {% include components/organisms/hotel-card.html %}
+  {% include components/organisms/hotel-card.html %}
+  {% include components/organisms/hotel-card.html %}
+  {% include components/organisms/hotel-card.html %}
 </div>

@@ -1,29 +1,136 @@
 ---
 layout: default
 
-container-type: container-fluid
+container-type: container
 ---
 
+    <div class="heading">
+      <h1 class="heading-title h3">Shangri-la Hotels and Resorts</h1>
+      <p class="heading-subtitle">Edsa Shangri-La, Manila</p>
+    </div>
 
-<div class="heading">
-  <h1 class="heading-title h3">Shangri-la Hotels and Resorts</h1>
-  <p class="heading-subtitle">Edsa Shangri-La, Manila</p>
-</div>
 
-<div class="card">
-  <div class="card-body">
+<div class="d-flex align-items-start align-items-center justify-content-between">
+
+  <!-- <div>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons" id="dasboard-filter-button">
+      <label class="btn btn-light active" for="All">
+        <input type="radio" name="dasboard-filter" id="All" value="All" checked> All
+      </label>
+      <label class="btn btn-light" for="Engagements">
+        <input type="radio" name="dasboard-filter" id="Engagements" value="Engagements"> Engagements
+      </label>
+      <label class="btn btn-light" for="Ratings">
+        <input type="radio" name="dasboard-filter" id="Ratings" value="Ratings"> Ratings
+      </label>
+      <label class="btn btn-light" for="Reviews">
+        <input type="radio" name="dasboard-filter" id="Reviews" value="Reviews"> Reviews
+      </label>
+      <label class="btn btn-light" for="Semantics">
+        <input type="radio" name="dasboard-filter" id="Semantics" value="Semantics"> Semantics
+      </label>
+    </div>
+    <label class="checkbox">
+      <input type="checkbox" name="options" id="option3" autocomplete="off"> Show Competition
+    </label>
+  </div> -->
+
+
+  <div>
+    <div class="dropdown d-inline-block">
+      <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        All Sources
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <h6 class="dropdown-header">Booking Platform</h6>
+        <a class="dropdown-item" href="#">Agoda</a>
+        <a class="dropdown-item" href="#">Booking.com</a>
+        <a class="dropdown-item" href="#">Tripadvisor</a>
+        <div class="dropdown-divider"></div>
+        <h6 class="dropdown-header">Social Media</h6>
+        <a class="dropdown-item" href="#">Facebook</a>
+        <a class="dropdown-item" href="#">Twitter</a>
+      </div>
+    </div>
+    <button class="btn btn-light" id="reportrange" type="button"><span></span></button>
+    <!-- <a class="btn btn-light" href=""><i class="fas fa-download"></i></a> -->
+  </div>
+
+  <div>
     <div class="row">
-      <div class="col-lg-2 text-center">
-        <h1 class="display-1">6.5</h1>
-        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
-        <!-- <p>out of 10</p> -->
-        <hr class="dahed">
-        <p class="lead mb-0">2643</p>
-        <p class="small text-muted mb-0">Total Reviews</p>
+      <div class="col-auto">
+        <label class="col-form-label" for="">Show value as:</label>
+      </div>
+      <div class="col">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-light active" for="All">
+            <input type="radio" name="dasboard-filter" id="All" value="All" checked> Absolute Value
+          </label>
+          <label class="btn btn-light" for="Engagements">
+            <input type="radio" name="dasboard-filter" id="Engagements" value="Engagements"> Percentage
+          </label>
+        </div>
       </div>
     </div>
   </div>
+
 </div>
+
+<hr class="dashed">
+
+    <div class="row">
+      <div class="col-lg-4 text-center">
+        <div class="card shadow" style="border-radius: 24px;">
+          <div class="card-body">
+            <div class="media">
+              <div class="mr-3 align-self-center">
+                <img class="rounded img-fluid" src="/assets/img/shangri-la-avatar.jpg" width="96" height="96" alt="">
+              </div>
+              <div class="media-body text-center">
+                <h6 class="display-4">3.5</h6>
+                <ul class="list-inline start-rating">
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                  <li class="list-inline-item"><i class="fas fa-star-half-alt"></i></li>
+                  <li class="list-inline-item"><i class="far fa-star"></i></li>
+                </ul>
+                <small class="text-muted mb-0">Average User Rating</small>
+              </div>
+            </div>
+            <hr class="dashed">
+            <div class="row">
+              <div class="col text-center">
+                <p class="h3 text-danger mb-0">180</p>
+                <p class="small text-muted mb-0">Negative<br/>Comments</p>
+              </div>
+              <div class="col text-center">
+                <p class="h3 text-success mb-0">345</p>
+                <p class="small text-muted mb-0">Positive<br/>Comments</p>
+              </div>
+              <div class="col text-center">
+                <p class="h3 text-secondary mb-0">87</p>
+                <p class="small text-muted mb-0">Neutral<br/>Comments</p>
+              </div>
+            </div>
+            <hr class="dashed">
+            <div class="row">
+              <div class="col text-center">
+                <p class="h3 text-primary mb-0">2,644</p>
+                <p class="small text-muted mb-0">Facebook Page Likes</p>
+              </div>
+              <div class="col text-center">
+                <p class="h3 text-primary mb-0">5,844</p>
+                <p class="small text-muted mb-0">Twitter Followers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        {% include components/organisms/semantics-table.html%}
+      </div>
+    </div>
 
 <div class="heading">
   <h1 class="heading-title h4">My Competitor</h1>
@@ -31,13 +138,81 @@ container-type: container-fluid
 
 
 <div class="row">
-  <div class="col-lg-3">
-    <div class="card">
-      <img class="card-img-top" src="https://dummyimage.com/16:9x1080/" alt="">
+  <div class="col-lg-4">
+    <div class="card" style="border-radius: 24px;">
       <div class="card-body">
-        <h6 class="card-title h4">Edsa Shangri-La</h6>
-        <!-- <h6 class="card-title">172 Negative Comments</h6> -->
+        <h6 class="card-title h5">Marriott</h6>
+        <div class="media">
+          <div class="mr-3 align-self-center">
+            <img class="rounded img-fluid" src="https://dummyimage.com/1:1x1080/" width="120" height="120" alt="">
+          </div>
+          <div class="media-body text-center">
+            <h6 class="display-4">3.5</h6>
+            <ul class="list-inline start-rating">
+              <li class="list-inline-item"><i class="fas fa-star"></i></li>
+              <li class="list-inline-item"><i class="fas fa-star"></i></li>
+              <li class="list-inline-item"><i class="fas fa-star"></i></li>
+              <li class="list-inline-item"><i class="fas fa-star-half-alt"></i></li>
+              <li class="list-inline-item"><i class="far fa-star"></i></li>
+            </ul>
+            <small class="text-muted mb-0">Average User Rating</small>
+          </div>
+        </div>
+      </div>
+      <div class="card-img-overlay">
         <a class="btn btn-primary btn-block" href="{{ site.baseurl }}/benchmark/compare.html">Compare Hotel</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card" style="border-radius: 24px;">
+      <div class="card-body">
+        <h6 class="card-title h5">Marriott</h6>
+        <div class="media">
+          <div class="mr-3 align-self-center">
+            <img class="rounded img-fluid" src="https://dummyimage.com/1:1x1080/" width="120" height="120" alt="">
+          </div>
+          <div class="media-body text-center">
+            <h6 class="display-4">3.5</h6>
+            <ul class="list-inline start-rating">
+              <li class="list-inline-item"><i class="fas fa-star"></i></li>
+              <li class="list-inline-item"><i class="fas fa-star"></i></li>
+              <li class="list-inline-item"><i class="fas fa-star"></i></li>
+              <li class="list-inline-item"><i class="fas fa-star-half-alt"></i></li>
+              <li class="list-inline-item"><i class="far fa-star"></i></li>
+            </ul>
+            <small class="text-muted mb-0">Average User Rating</small>
+          </div>
+        </div>
+        <div class="card-img-overlay">
+          <a class="btn btn-primary btn-block" href="{{ site.baseurl }}/benchmark/compare.html">Compare Hotel</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card" style="border-radius: 24px;">
+      <div class="card-body">
+        <h6 class="card-title h5">Marriott</h6>
+        <div class="media">
+          <div class="mr-3 align-self-center">
+            <img class="rounded img-fluid" src="https://dummyimage.com/1:1x1080/" width="120" height="120" alt="">
+          </div>
+          <div class="media-body text-center">
+            <h6 class="display-4">3.5</h6>
+            <ul class="list-inline start-rating">
+              <li class="list-inline-item"><i class="fas fa-star"></i></li>
+              <li class="list-inline-item"><i class="fas fa-star"></i></li>
+              <li class="list-inline-item"><i class="fas fa-star"></i></li>
+              <li class="list-inline-item"><i class="fas fa-star-half-alt"></i></li>
+              <li class="list-inline-item"><i class="far fa-star"></i></li>
+            </ul>
+            <small class="text-muted mb-0">Average User Rating</small>
+          </div>
+        </div>
+        <div class="card-img-overlay">
+          <a class="btn btn-primary btn-block" href="{{ site.baseurl }}/benchmark/compare.html">Compare Hotel</a>
+        </div>
       </div>
     </div>
   </div>

@@ -8,17 +8,11 @@ container-type: container-fluid
 <div class="heading">
   <h1 class="heading-title h3">Good afternoon, Jasper</h1>
 </div>
-<!-- 
-<div class="jumbotron">
-  <h1 class="heading-title h3">Shangri-la Hotels and Resorts</h1>
-  <p class="heading-subtitle">Edsa Shangri-La, Manila</p>
-</div> -->
 
 <div class="card mb-4">
   <div class="card-body">
     <div class="d-flex align-items-start align-items-center justify-content-between">
       <h6 class="card-title h4">Average User Rating</h6>
-      <!-- <button class="btn btn-light" id="reportrange" type="button"><span></span></button> -->
       <div class="form-group">
         <select class="form-control" name="" id="">
           <option value="">All</option>
@@ -30,12 +24,12 @@ container-type: container-fluid
     <div class="row">
       <div class="col-lg-2 text-center">
         <h1 class="display-1">6.5</h1>
-        <ul class="list-inline">
-          <li class="list-inline-item m-0"><i class="fas fa-star"></i></li>
-          <li class="list-inline-item m-0"><i class="fas fa-star"></i></li>
-          <li class="list-inline-item m-0"><i class="fas fa-star"></i></li>
-          <li class="list-inline-item m-0"><i class="fas fa-star-half-alt"></i></li>
-          <li class="list-inline-item m-0"><i class="far fa-star"></i></li>
+        <ul class="list-inline start-rating">
+          <li class="list-inline-item"><i class="fas fa-star"></i></li>
+          <li class="list-inline-item"><i class="fas fa-star"></i></li>
+          <li class="list-inline-item"><i class="fas fa-star"></i></li>
+          <li class="list-inline-item"><i class="fas fa-star-half-alt"></i></li>
+          <li class="list-inline-item"><i class="far fa-star"></i></li>
         </ul>
         <hr class="dahed">
         <p class="lead mb-0">2643</p>
@@ -44,13 +38,6 @@ container-type: container-fluid
       <div class="col-lg-10">
         <canvas id="average-user-rating" width="5" height="1"></canvas>
       </div>
-      <!-- <div class="col-lg-2">
-        <p class="lead">2643</p>
-        <p class="text-muted">Total Reivews</p>
-        <hr class="dahed">
-        <p class="lead">1534</p>
-        <p class="text-muted">Reivews with Comments</p>
-      </div> -->
     </div>
   </div>
 </div>
@@ -64,19 +51,13 @@ container-type: container-fluid
           <div class="card-body">
             <div class="row">
               <div class="col-lg-4">
-                <div>
-                  <canvas id="booking-platform-review-source-pie" width="120" height="120"></canvas>
-                  <!-- <div>
-                    <p>2,643</p>
-                    <p>Total Reviews</p>
-                    <p>from the past 6 months</p>
-                  </div> -->
-                </div>
+                <canvas id="booking-platform-review-source-pie" width="120" height="120"></canvas>
               </div>
               <div class="col-lg-8">
                 <canvas id="booking-platform-review-source-bar" width="120" height="60"></canvas>
               </div>
             </div>
+            <hr class="dashed">
             <h6 class="card-title h5 text-center">Booking Platform</h6>
           </div>
         </div>
@@ -92,6 +73,7 @@ container-type: container-fluid
                 <canvas id="social-media-review-source-bar" width="120" height="60"></canvas>
               </div>
             </div>
+            <hr class="dashed">
             <h6 class="card-title h5 text-center">Social Media</h6>
           </div>
         </div>

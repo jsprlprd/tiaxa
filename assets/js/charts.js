@@ -7,32 +7,32 @@ var AverageUserRating = new Chart(aur, {
             label: '# of Votes',
             data: [8, 3, 6, 5, 9, 8, 8, 3, 6, 5, 9, 8],
             backgroundColor: [
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)'
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)'
             ],
             borderColor: [
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)',
-                'rgba(241, 196, 51, 1)'
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)',
+                'rgba(246, 158, 29, 1)'
             ],
             borderWidth: 1
         }]
@@ -81,14 +81,14 @@ var BookingPlatformReviewSourcePie = new Chart(bprsp, {
             label: 'Total Reviews',
             data: [60, 30, 10],
             backgroundColor: [
-                'rgba(0, 166, 81, 1)',
-                'rgba(255, 97, 97, 1)',
-                'rgba(165, 165, 165, 1)'
+                'rgba(25, 172, 91, 1)',
+                'rgba(237, 34, 32, 1)',
+                'rgba(145, 145, 145, 1)'
             ],
             borderColor: [
-                'rgba(0, 166, 81, 1)',
+                'rgba(25, 172, 91, 1)',
                 'rgba(242, 24, 0, 1)',
-                'rgba(165, 165, 165, 1)'
+                'rgba(145, 145, 145, 1)'
             ],
             borderWidth: 1,
         }]
@@ -117,16 +117,16 @@ var BookingPlatformReviewSourceBar = new Chart(bprsp, {
             label: 'Total Reviews',
             data: [1045, 874, 693],
             backgroundColor: [
-                'rgba(127, 170, 255, 1)',
-                'rgba(127, 170, 255, 1)',
-                'rgba(127, 170, 255, 1)'
+                'rgba(52, 127, 194, 1)',
+                'rgba(52, 127, 194, 1)',
+                'rgba(52, 127, 194, 1)'
             ],
             borderColor: [
-                'rgba(127, 170, 255, 1)',
-                'rgba(127, 170, 255, 1)',
-                'rgba(127, 170, 255, 1)'
+                'rgba(52, 127, 194, 1)',
+                'rgba(52, 127, 194, 1)',
+                'rgba(52, 127, 194, 1)'
             ],
-            borderWidth: 1,
+            borderWidth: 0,
         }]
     },
     options: {
@@ -157,14 +157,14 @@ var SocialMediaReviewSourcePie = new Chart(smrsp, {
             label: 'Total Reviews',
             data: [60, 30, 10],
             backgroundColor: [
-                'rgba(0, 166, 81, 1)',
-                'rgba(255, 97, 97, 1)',
-                'rgba(165, 165, 165, 1)'
+                'rgba(25, 172, 91, 1)',
+                'rgba(237, 34, 32, 1)',
+                'rgba(145, 145, 145, 1)'
             ],
             borderColor: [
-                'rgba(0, 166, 81, 1)',
+                'rgba(25, 172, 91, 1)',
                 'rgba(242, 24, 0, 1)',
-                'rgba(165, 165, 165, 1)'
+                'rgba(145, 145, 145, 1)'
             ],
             borderWidth: 1,
         }]
@@ -197,12 +197,12 @@ var SocialMediaReviewSourceBar = new Chart(smrsb, {
             label: 'Total Reviews',
             data: [506, 388],
             backgroundColor: [
-                'rgba(127, 170, 255, 1)',
-                'rgba(127, 170, 255, 1)'
+                'rgba(52, 127, 194, 1)',
+                'rgba(52, 127, 194, 1)'
             ],
             borderColor: [
-                'rgba(127, 170, 255, 1)',
-                'rgba(127, 170, 255, 1)'
+                'rgba(52, 127, 194, 1)',
+                'rgba(52, 127, 194, 1)'
             ],
             borderWidth: 1,
         }]
