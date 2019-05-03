@@ -1,7 +1,3 @@
-- text: General
-  icon: 
-  url: settings/general.html
-
 - text: Task
   icon: 
   url: settings/task.html
