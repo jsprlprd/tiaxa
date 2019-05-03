@@ -560,3 +560,19 @@ a.card .card-img-overlay {
 .progress {
   background-color: transparent;
 }
+
+
+
+.modal-header {
+  padding: 1.5rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+
+.card-header {
+  padding: 1.5rem;
+  background-color: transparent;
+}

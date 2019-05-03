@@ -1,7 +1,7 @@
-- text: Reply
-  url: reply
+- text: Task
+  url: task
   status: active
 
-- text: Create a Task
-  url: create-a-task
+- text: Reply
+  url: reply
   status:
