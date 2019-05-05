@@ -1,0 +1,59 @@
+<div class="modal" id="settings-add-new-template-modal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title h4">Create Template</h6>
+          <button class="close" type="button" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          {% include components/molecules/form-group/input.html 
+            form-layout=""
+            isInputLarge=""
+            isInputRequired=""
+            hasFormLabel=""
+            form-label-class=""
+            form-label-size=""
+            form-label-text="Template Name"
+            input-size=""
+            input-type="text"
+            input-name="template-name"
+            input-value=""
+            input-placeholder="Enter Template Name"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+            hasFormHelper="none"
+            form-helper-text=""
+          %}
+          {% include components/molecules/form-group/textarea.html 
+            form-layout=""
+            isInputLarge=""
+            isInputRequired=""
+            hasFormLabel=""
+            form-label-class=""
+            form-label-size=""
+            form-label-text="Message"
+            input-size=""
+            input-type="text"
+            input-name="message"
+            input-value=""
+            input-placeholder="Enter Message"
+            hasFormIcon="none"
+            form-icon-name=""
+            form-icon-placement=""
+            hasFormHelper="none"
+            form-helper-text=""
+          %}
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-light btn-wide" data-dismiss="modal" type="button">Cancel</button>
+          <button class="btn btn-primary btn-wide" type="button">Create Template</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+

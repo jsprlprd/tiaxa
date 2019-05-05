@@ -4,76 +4,29 @@ layout: default
 container-type: container
 ---
 
-    <div class="heading">
-      <h1 class="heading-title h3">Shangri-la Hotels and Resorts</h1>
-      <p class="heading-subtitle">Edsa Shangri-La, Manila</p>
-    </div>
-
+<div class="heading">
+  <h1 class="heading-title h3">Shangri-la Hotels and Resorts</h1>
+  <p class="heading-subtitle">Edsa Shangri-La, Manila</p>
+</div>
 
 <div class="d-flex align-items-start align-items-center justify-content-between">
+  <button class="btn btn-light" id="reportrange" type="button"><span></span></button>
 
-  <!-- <div>
-    <div class="btn-group btn-group-toggle" data-toggle="buttons" id="dasboard-filter-button">
-      <label class="btn btn-light active" for="All">
-        <input type="radio" name="dasboard-filter" id="All" value="All" checked> All
-      </label>
-      <label class="btn btn-light" for="Engagements">
-        <input type="radio" name="dasboard-filter" id="Engagements" value="Engagements"> Engagements
-      </label>
-      <label class="btn btn-light" for="Ratings">
-        <input type="radio" name="dasboard-filter" id="Ratings" value="Ratings"> Ratings
-      </label>
-      <label class="btn btn-light" for="Reviews">
-        <input type="radio" name="dasboard-filter" id="Reviews" value="Reviews"> Reviews
-      </label>
-      <label class="btn btn-light" for="Semantics">
-        <input type="radio" name="dasboard-filter" id="Semantics" value="Semantics"> Semantics
-      </label>
+  <div class="row">
+    <div class="col-auto">
+      <label class="col-form-label" for="">Show value as:</label>
     </div>
-    <label class="checkbox">
-      <input type="checkbox" name="options" id="option3" autocomplete="off"> Show Competition
-    </label>
-  </div> -->
-
-
-  <div>
-    <!-- <div class="dropdown d-inline-block">
-      <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        All Sources
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <h6 class="dropdown-header">Booking Platform</h6>
-        <a class="dropdown-item" href="#">Agoda</a>
-        <a class="dropdown-item" href="#">Booking.com</a>
-        <a class="dropdown-item" href="#">Tripadvisor</a>
-        <div class="dropdown-divider"></div>
-        <h6 class="dropdown-header">Social Media</h6>
-        <a class="dropdown-item" href="#">Facebook</a>
-        <a class="dropdown-item" href="#">Twitter</a>
-      </div>
-    </div> -->
-    <button class="btn btn-light" id="reportrange" type="button"><span></span></button>
-    <!-- <a class="btn btn-light" href=""><i class="fas fa-download"></i></a> -->
-  </div>
-
-  <div>
-    <div class="row">
-      <div class="col-auto">
-        <label class="col-form-label" for="">Show value as:</label>
-      </div>
-      <div class="col">
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-          <label class="btn btn-light active" for="All">
-            <input type="radio" name="dasboard-filter" id="All" value="All" checked> Absolute Value
-          </label>
-          <label class="btn btn-light" for="Engagements">
-            <input type="radio" name="dasboard-filter" id="Engagements" value="Engagements"> Percentage
-          </label>
-        </div>
+    <div class="col-auto">
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-light active" for="All">
+          <input type="radio" name="dasboard-filter" id="All" value="All" checked> Absolute Value
+        </label>
+        <label class="btn btn-light" for="Engagements">
+          <input type="radio" name="dasboard-filter" id="Engagements" value="Engagements"> Percentage
+        </label>
       </div>
     </div>
   </div>
-
 </div>
 
 <hr class="dashed">
@@ -101,8 +54,8 @@ container-type: container
             <hr class="dashed">
             <div class="row">
               <div class="col text-center">
-                <p class="h3 text-danger mb-0">180</p>
-                <p class="small text-muted mb-0">Negative<br/>Comments</p>
+                <p class="h3 mb-0">180</p>
+                <p class="small text-muted mb-0">Total Reviews</p>
               </div>
               <!-- <div class="col text-center">
                 <p class="h3 text-success mb-0">345</p>
@@ -160,7 +113,7 @@ container-type: container
         </div>
       </div>
       <div class="card-img-overlay">
-        <a class="btn btn-primary btn-block" href="{{ site.baseurl }}/benchmark/compare.html">Compare Hotel</a>
+        <a class="btn btn-primary btn-block" href="{{ site.baseurl }}/my-hotels/compare.html">Compare Hotel</a>
       </div>
     </div>
   </div>
@@ -184,9 +137,9 @@ container-type: container
             <small class="text-muted mb-0">Average User Rating</small>
           </div>
         </div>
-        <div class="card-img-overlay">
-          <a class="btn btn-primary btn-block" href="{{ site.baseurl }}/benchmark/compare.html">Compare Hotel</a>
-        </div>
+      </div>
+      <div class="card-img-overlay">
+        <a class="btn btn-primary btn-block" href="{{ site.baseurl }}/my-hotels/compare.html">Compare Hotel</a>
       </div>
     </div>
   </div>
@@ -210,9 +163,9 @@ container-type: container
             <small class="text-muted mb-0">Average User Rating</small>
           </div>
         </div>
-        <div class="card-img-overlay">
-          <a class="btn btn-primary btn-block" href="{{ site.baseurl }}/benchmark/compare.html">Compare Hotel</a>
-        </div>
+      </div>
+      <div class="card-img-overlay">
+        <a class="btn btn-primary btn-block" href="{{ site.baseurl }}/my-hotels/compare.html">Compare Hotel</a>
       </div>
     </div>
   </div>

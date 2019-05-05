@@ -1,0 +1,54 @@
+<div class="modal" id="reply-modal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title h4">Reply</h6>
+        <button class="close" type="button" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        {% include components/molecules/form-group/select.html 
+          form-layout=""
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-class=""
+          form-label-size=""
+          form-label-text="Template"
+          input-size=""
+          input-type=""
+          input-name="select-template"
+          input-value=""
+          input-placeholder="Select from Template"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+        {% include components/molecules/form-group/textarea.html 
+          form-layout=""
+          isInputLarge=""
+          isInputRequired=""
+          hasFormLabel=""
+          form-label-class=""
+          form-label-size=""
+          form-label-text="Message"
+          input-size=""
+          input-type=""
+          input-name="message"
+          input-value=""
+          input-placeholder="Write your message here"
+          hasFormIcon="none"
+          form-icon-name=""
+          form-icon-placement=""
+          hasFormHelper="none"
+          form-helper-text=""
+        %}
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-light btn-wide" data-dismiss="modal" type="button">Cancel</button>
+        <button class="btn btn-primary btn-wide" type="button">Send Message</button>
+      </div>
+    </div>
+  </div>
+</div>

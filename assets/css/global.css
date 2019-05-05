@@ -6,7 +6,7 @@
 .heading-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #F0C215;
+  /* color: #FFC907; */
 }
 
 .heading-subtitle {
@@ -34,7 +34,6 @@
 
 #main-panel {
   margin-left: 0;
-  /* padding-top: 64px; */
   position: relative;
 }
 
@@ -76,13 +75,17 @@
   }
 }
 
+
+
+
+
+
 #global-slider {
   position: fixed;
   top: 0;
   bottom: 0;
   display: none;
   width: 280px;
-  /* background-color: #EEEEF4; */
   z-index: 1040;
   padding: 16px;
   flex-direction: column;
@@ -96,8 +99,6 @@
     position: unset;
   }
 }
-
-
 
 #global-slider .navbar-nav {
   width: 100%;
@@ -114,7 +115,6 @@
 }
 
 #global-slider .nav-link-icon {
-  /* color: #F0C215; */
   line-height: 24px;
   width: 24px;
   text-align: center;
@@ -124,16 +124,16 @@
 
 
 
-.navbar-wrapper {
-  /* padding: 12px; */
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: space-between;
-  flex-direction: column;
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -153,7 +153,7 @@
 
 .profile {
   padding: 16px;
-  /* text-align: center; */
+  text-align: center;
   color: #ffffff;
   width: 100%;
 }
@@ -185,37 +185,22 @@ a.profile:hover {
   font-size: 12px;
 }
 
-
+ 
+.card-header {
+  /* padding: 1.5rem; */
+  background-color: transparent;
+}
+ 
 .card-body .card {
   border: 0;
 }
 
 .card-body {
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
 }
 
 .card-title {
   margin-bottom: 1rem;
-}
-
-#dasboard-filter-button label {
-  border-radius: 9999px;
-  padding-left: 24px;
-  padding-right: 24px;
-  border: 0;
-  box-shadow: none;
-  margin-left: 4px;
-}
-
-#dasboard-filter-button label:first-child {
-  margin-left: 0;
-}
-
-
-
-#dasboard-filter-button label.active {
-  background-color: #F0C215;
-  color: #ffffff;
 }
 
 
@@ -283,175 +268,6 @@ a.card:hover {
 .card-scrollable .card:last-child {
   margin-right: 16px;
 }
-
-
-.active [value="All"] ~ .cards [data-category] {
-  display: block;
-}
-
-
-
-
-
-
-.active > [value="Engagements"] ~ .cards .card:not([data-category*="Engagement"]),
-.active > [value="Ratings"] ~ .cards .card:not([data-category*="Rating"]),
-.active > [value="Reviews"] ~ .cards .card:not([data-category*="Review"]),
-.active > [value="Remantics"] ~ .cards .card:not([data-category*="Semantic"]) {
-  display: none;
-}
-
-
-
-
-
-#global-search .form-control {
-  border: 0;
-  width: 480px;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-}
-
-
-#review-modal .modal-header {
-  border-bottom: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.table-scrollable {
-  max-height: 300px;
-  overflow: auto;
-  position: relative;
-}
-
-
-
-
-
-
-.table thead th {
-  text-transform: uppercase;
-  white-space: nowrap;
-  font-size: 12px;
-  color: #727272;
-  font-weight: 600;
-  background-color: #f0f2f4;
-  border-top: 0;
-  border-bottom: 0;
-}
-
-
-
-.table-scrollable table {
-position: relative;
-border-collapse: collapse;
-margin-bottom: 0;
-
-}
-
-.table-scrollable table th {
-position: -webkit-sticky; /* for Safari */
-position: sticky;
-top: 0;
-z-index: 2;;
-/* min-width: 320px; */
-/* background-color: #ffffff; */
-/* border-bottom: 1px solid #ddd; */
-}
-
-.table-scrollable table.weekly th,
-.table-scrollable table.weekly td {
-  /* min-width: 176px; */
-}
-
-.table-scrollable table th:first-child,
-.table-scrollable table td:first-child {
-left: 0;
-z-index: 2;
-/* min-width: 88px; */
-/* text-align: right; */
-/* border-right: 0; */
-}
-
-.table-scrollable table tbody td {
-  /* border-right: 1px solid #e4e4e4; */
-}
-
-.table-scrollable table tbody td:first-child {
-position: -webkit-sticky; /* for Safari */
-position: sticky;
-z-index: 1;
-left: 0;
-/* text-align: right; */
-/* border-top: 0; */
-/* background-color: #eeeef4; */
-/* border-right: 0; */
-}
-
-.table-scrollable table tbody tr:first-child td {
-  border-top: 0;
-}
-
-
-
-
-
-
-.start-rating {
-  color: #F0C215;
-  margin-bottom: 0;
-}
-
-.start-rating .list-inline-item {
-  margin-right: 0;
-  font-size: 20px;
-}
-
-
-.negative-rating {
-  color: #ED2224;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-}
-
-
-.list-icon > li {
-  padding-left: 20px;
-  position: relative;
-}
-
-.list-icon > li::before {
-  font-family: "Font Awesome 5 Free"; font-weight: 900;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  position: absolute;
-  left: 0px;
-  width: 24px;
-}
-/* 
-.negative-rating > li::before {
-  content: '\f00d';
-} */
-
-
-
-
 
 
 
@@ -548,6 +364,200 @@ a.card .card-img-overlay {
 
 
 
+
+
+
+
+
+
+
+
+
+#dasboard-filter-button label {
+  border-radius: 9999px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 0;
+  box-shadow: none;
+  margin-left: 4px;
+}
+
+#dasboard-filter-button label:first-child {
+  margin-left: 0;
+}
+
+
+
+#dasboard-filter-button label.active {
+  background-color: #FFC907;
+  color: #ffffff;
+}
+
+
+
+
+#global-search .form-control {
+  border: 0;
+  width: 480px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+
+
+
+
+
+#review-modal .modal-header {
+  border-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.table thead th {
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 12px;
+  color: #727272;
+  font-weight: 600;
+  background-color: #f0f2f4;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+
+
+.table-scrollable {
+  max-height: 300px;
+  overflow: auto;
+  position: relative;
+}
+
+
+
+
+
+.table-scrollable table {
+position: relative;
+border-collapse: collapse;
+margin-bottom: 0;
+
+}
+
+.table-scrollable table th {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 0;
+  z-index: 2;;
+  /* min-width: 320px; */
+  /* background-color: #ffffff; */
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.table-scrollable table.weekly th,
+.table-scrollable table.weekly td {
+  /* min-width: 176px; */
+}
+
+.table-scrollable table th:first-child,
+.table-scrollable table td:first-child {
+left: 0;
+z-index: 2;
+/* min-width: 88px; */
+/* text-align: right; */
+/* border-right: 0; */
+}
+
+.table-scrollable table tbody td {
+  /* border-right: 1px solid #e4e4e4; */
+}
+
+.table-scrollable table tbody td:first-child {
+position: -webkit-sticky; /* for Safari */
+position: sticky;
+z-index: 1;
+left: 0;
+/* text-align: right; */
+/* border-top: 0; */
+/* background-color: #eeeef4; */
+/* border-right: 0; */
+}
+
+.table-scrollable table tbody tr:first-child td {
+  border-top: 0;
+}
+
+
+
+
+
+
+.start-rating {
+  color: #FFC907;
+  margin-bottom: 0;
+}
+
+.start-rating .list-inline-item {
+  margin-right: 0;
+  font-size: 20px;
+}
+
+
+.negative-rating {
+  color: #ED2224;
+}
+
+
+
+
+
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+
+.list-icon > li {
+  padding-left: 20px;
+  position: relative;
+}
+
+.list-icon > li::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  left: 0px;
+  width: 24px;
+}
+/* 
+.negative-rating > li::before {
+  content: '\f00d';
+} */
+
+
+
+
+
+
+
+
+
+
 #filter {
   background: #fafafa;
   max-width: 320px;
@@ -572,7 +582,33 @@ a.card .card-img-overlay {
 }
 
 
-.card-header {
-  padding: 1.5rem;
-  background-color: transparent;
+.container-responsive {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+
+.container-responsive .container-wrapper {
+  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.container-responsive .modal-header, .container-responsive .modal-footer {
+  flex: 0 0 auto;
+}
+
+
+
+.bg-light {
+  background-color: #E3E2E3 !important;
+}
+
+#category-comparision {
+  column-count: 2;
 }

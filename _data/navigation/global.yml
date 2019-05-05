@@ -8,7 +8,7 @@
 
 - text: My Hotels
   icon: fas fa-hotel
-  url: benchmark/
+  url: my-hotels/
 
 - text: Reviews
   icon: far fa-comment-alt

@@ -5,7 +5,7 @@ container-type: container-fluid
 ---
 
 <div class="heading">
-  <h1 class="heading-title h3">Benchmark</h1>
+  <h1 class="heading-title h3">My Hotels</h1>
 </div>
 
 <div class="d-flex align-items-start align-items-center justify-content-between">
@@ -36,21 +36,16 @@ container-type: container-fluid
 
   <div>
     <div class="d-inline-block">
-      <select class="form-control" name="" id="">
-        <option value="">Average User Rating</option>
-        <option value="">Negative Comments</option>
-        <option value="">Positive Comments</option>
-      </select>
+
+
+
     </div>
     <div class="dropdown d-inline-block">
       <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        All Sources
+        All Booking Platform
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <h6 class="dropdown-header">Booking Platform</h6>
-        <a class="dropdown-item" href="#">Agoda</a>
-        <a class="dropdown-item" href="#">Booking.com</a>
-        <a class="dropdown-item" href="#">Tripadvisor</a>
+        <a class="dropdown-item active" href="#">All Booking Platform</a>
         <div class="dropdown-divider"></div>
         <h6 class="dropdown-header">Social Media</h6>
         <a class="dropdown-item" href="#">Facebook</a>
@@ -62,7 +57,17 @@ container-type: container-fluid
   </div>
 
   <div>
-    <div class="row">
+      <div class="row">
+        <div class="col-auto">
+          <label class="col-form-label" for="">Rank by:</label>
+        </div>
+        <div class="col">
+          <select class="form-control" name="" id="">
+            <option value="">Average User Rating</option>
+            <option value="">Negative Comments</option>
+            <option value="">Positive Comments</option>
+          </select>
+        </div>
       <div class="col-auto">
         <label class="col-form-label" for="">Show value as:</label>
       </div>

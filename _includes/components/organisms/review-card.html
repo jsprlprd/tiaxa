@@ -1,0 +1,59 @@
+<div class="card">
+    <div class="card-header">
+      <div class="d-flex align-items-start align-items-center justify-content-between mb-3">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <span class="badge badge-danger">Negative Review</span>
+          </li>
+          <li class="list-inline-item">
+            <span class="text-muted"><b>Location</b>: Philippines</span>
+          </li>
+        </ul>
+        <span class="text-muted"><b>Reviewed</b>: 9/28/18 at <img src="/assets/img/Agoda_logo.svg" alt="" height="32"></span>
+      </div>
+      <p>
+        <ul class="list-inline start-rating">
+          <li class="list-inline-item"><i class="fas fa-star"></i></li>
+          <li class="list-inline-item"><i class="fas fa-star"></i></li>
+          <li class="list-inline-item"><i class="fas fa-star"></i></li>
+          <li class="list-inline-item"><i class="fas fa-star-half-alt"></i></li>
+          <li class="list-inline-item"><i class="far fa-star"></i></li>
+        </ul>
+      </p>
+      <p class="card-text">Rundown hotel rooms, poor housekeeping staff service ,This hotel needs a major upkeep and maintenance works. For the room rate that I paid - Php12,800/night- the bathroom pipes were clogged, the housekeeping staff took forever to deliver our requests, the carpet is filthy, and no safety handles for PwDs inside the bathroom, except for one on the shower wall. Bath tub is too high for a pwd who has dofficulty climbing. Plus, the twin beds are soooo small. Marriott has better beds and rooms.</p>
+      <div style="margin-bottom: calc(-1.5rem + -1px)">
+        {% include components/molecules/nav-tabs.html
+          nav-type="nav-tabs"
+          isLarge=""
+          isStacked=""
+          isJustified=""
+          isResponsive="nav-tabs-responsive"
+          list-value-name=site.data.navigation.review-setting
+          hasIcon=""
+        %}
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="tab-content">
+        <div class="tab-pane active show" id="task-tab">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item badge badge-light"><b>Room:</b> Unclog bathroom pipes</li>
+            <li class="list-inline-item badge badge-light"><b>Cleanliness:</b> Disinfect beddings</li>
+            <li class="list-inline-item badge badge-light"><b>Room:</b> Vacuum floor mat</li>
+            <li class="list-inline-item badge badge-light"><b>Facility:</b> Fix light bulbs</li>
+            <li class="list-inline-item badge badge-light"><a href="" data-toggle="modal" data-target="#add-new-task-modal"><i class="fas fa-plus mr-2"></i>Add New Task</a></li>
+          </ul>
+        </div>
+        <div class="tab-pane" id="reply-tab">
+          <p><b>Reponse from Jasper Lepardo</b> <span class="text-muted">2 months ago</span></p>
+          <div style="padding: 24px; border: 1px solid #ddd; border-radius: 8px; background-color: #f0f2f4;">
+            <p>Dear tiaxa_asia,</p>
+            <p>Thank you for taking the time to share your experience with us. It is with great pleasure to hear that you had a memorable experience. Please know that each and every member of our team does his very best to better serve our guests. Your nice comments on our facilities and service are so much appreciated. Once again, thank you and we look forward to welcoming you back for yet another great stay.</p>
+            <p>Yours sincerely,</p>
+            <p>Amit O<br>General Manager</p>
+          </div>
+          <!-- <a href="" data-toggle="modal" data-target="#reply-modal">Edit Reply</a> -->
+        </div>
+      </div>
+    </div>
+  </div>

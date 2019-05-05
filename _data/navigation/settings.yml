@@ -2,9 +2,9 @@
   icon: 
   url: settings/task.html
 
-- text: Contact
+- text: Department
   icon: 
-  url: settings/contact.html
+  url: settings/department.html
 
 - text: Template
   icon: 
