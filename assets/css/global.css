@@ -418,7 +418,9 @@ a.card .card-img-overlay {
 
 
 
-
+.btn-group .btn {
+  white-space: nowrap;
+}
 
 
 
